@@ -57,8 +57,6 @@ for j = 1:length(mu_values)
         % Filter only the real roots
         real_roots = roots_array(imag(roots_array) == 0 & real(roots_array) < h_value & real(roots_array) > 0);
         
-% disp("q1 = ", num2str(q1_value));
-% disp("q2 = ", num2str(q2));
 disp(real_roots);
 
         % Store x values and corresponding real roots
@@ -80,4 +78,5 @@ title('Plot of x versus Different \mu Values and h(x)');
 legend show;
 grid off;
 hold off;
+
 
